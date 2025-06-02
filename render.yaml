@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: lineworks-webhook
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: ACCESS_TOKEN
+        sync: false
+      - key: BOT_ID
+        sync: false
